@@ -32,5 +32,5 @@ pipenv run blocker.py --help
 
 pipenv run blocker.py --subbreddit parkhorse
 
-pipenv run blocker.py --block-list block-list-example.txt
+pipenv run python blocker.py --block-list block-list-example.txt
 ```
