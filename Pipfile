@@ -8,7 +8,6 @@ pylint = "*"
 
 [packages]
 praw = "*"
-sqlitedict = "*"
 progressbar2 = "*"
 coloredlogs = "*"
 
