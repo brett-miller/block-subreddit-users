@@ -1,6 +1,7 @@
 Block Subreddit Users
 
-* Create an app (https://www.reddit.com/prefs/apps)
+* Add app to your Reddit profile (https://www.reddit.com/prefs/apps)
+* Create block-list.txt file
 * Create .env file with the following settings:
 
 ```
@@ -32,7 +33,15 @@ pipenv run blocker.py --help
 #   -l BLOCK_LIST, --block-list BLOCK_LIST
 #   -s SUBBREDDIT, --subbreddit SUBBREDDIT
 
-pipenv run blocker.py --subbreddit parkhorse
+pipenv run blocker.py --subbreddit PutAnEggOnIt
 
 pipenv run python blocker.py --block-list block-list.txt
+```
+
+Deploy to AWS using [Serverless](https://serverless.com/framework/docs/providers/aws/guide/serverless.yml/)
+
+```
+npm install
+
+serverless deploy
 ```

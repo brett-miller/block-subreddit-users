@@ -12,6 +12,7 @@ functions:
     memorySize: 128
     timeout: 590
     reservedConcurrency: 1
+    logRetentionInDays: 3
 
 plugins:
   - serverless-dotenv-plugin
