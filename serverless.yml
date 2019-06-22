@@ -1,0 +1,18 @@
+service: block-reddit-users
+
+provider:
+  name: aws
+  runtime: python3.7
+
+functions:
+  blocker:
+    handler: blocker.run
+    events:
+      - schedule: rate(10 minutes)
+    memorySize: 128
+    timeout: 590
+    reservedConcurrency: 1
+
+plugins:
+  - serverless-dotenv-plugin
+  - serverless-python-requirements

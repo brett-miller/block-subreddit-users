@@ -8,6 +8,8 @@ REDDIT_USERNAME=my_username
 REDDIT_CLIENT_ID=axc0293adfc
 REDDIT_CLIENT_SECRET=fafdsaMDAfas0321fsdazxc
 REDDIT_PASSWORD=12345
+# max number of posts to fetch for each subreddit
+POST_LIMIT=100
 
 # optional logging settings
 COLOREDLOGS_AUTO_INSTALL=true
@@ -32,5 +34,5 @@ pipenv run blocker.py --help
 
 pipenv run blocker.py --subbreddit parkhorse
 
-pipenv run python blocker.py --block-list block-list-example.txt
+pipenv run python blocker.py --block-list block-list.txt
 ```
